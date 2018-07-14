@@ -16,9 +16,9 @@ gulp.task('css', _ => {
 gulp.task('js', _ => {
 	return gulp.src('src/**/*.js')
 		.pipe(sourcemaps.init())
-		.pipe(babel({presets: ['env']}))
+		//.pipe(babel({presets: ['env']}))
 		.pipe(concat('min.js'))
-		.pipe(uglify())
+		//.pipe(uglify())
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('build/js'));
 });
