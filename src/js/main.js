@@ -6,6 +6,7 @@ class Tooltip {
 		this._element = element;
 
 		const tooltip_target = this._element.getAttribute('data-tooltip');
+
 		if (tooltip_target) this._title = document.querySelector(tooltip_target).innerHTML;
 		else this._title = this._element.getAttribute('title');
 		
