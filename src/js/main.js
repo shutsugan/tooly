@@ -63,6 +63,7 @@ class Tooltip {
 			this._tooltip.classList.remove('visible');
 
 			this._tooltip.addEventListener('transitionend', _ => {
+				if (this._tooltip === null) return;
 				document.body.removeChild(this._tooltip);
 				this._tooltip = null;
 			});

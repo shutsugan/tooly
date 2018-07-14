@@ -17,15 +17,15 @@ html, body {
 	top: 0;
 	left: 0;
 	max-width: 400px;
-	background: var(--primary-color);
+	background: #222;
 	padding: 3px 10px;
-	font-size: .815em;
+	font-size: 0.815em;
 	color: #FFF;
 	border-radius: 100px 100px 3px 3px;
 	opacity: 0;
 	transform: rotateX(90deg);
 	transform-origin: 50% 100%;
-	transition opacity: .3s, transform .3s, border-radius .3s;
+	transition: opacity 0.3s, transform 0.3s, border-radius 0.3s;
 }
 
 .tooly::after {
