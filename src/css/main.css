@@ -11,3 +11,36 @@ html, body {
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
 }
+
+.tooly {
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 400px;
+	background: var(--primary-color);
+	padding: 3px 10px;
+	font-size: .815em;
+	color: #FFF;
+	border-radius: 100px 100px 3px 3px;
+	opacity: 0;
+	transform: rotateX(90deg);
+	transform-origin: 50% 100%;
+	transition opacity: .3s, transform .3s, border-radius .3s;
+}
+
+.tooly::after {
+	content:'';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -6px;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid transparent;
+}
+
+.tooly.visible {
+	opacity: 1;
+	border-radius: 3px;
+	transform: rotateX(0);
+}
