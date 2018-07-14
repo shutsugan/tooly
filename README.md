@@ -49,7 +49,7 @@ Option | Type | Default | Description
 ------ | ---- | ------- | -----------
 selector | HTMLElement selector | none | element that should be targeted.
 
-### Carousel screenshot
+### Tooly screenshot
 
 Normal tooltip
 
