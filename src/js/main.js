@@ -45,8 +45,8 @@ class Tooltip {
 		const tooltip = this._createTooltip();
 		const width = tooltip.offsetWidth;
 		const height = tooltip.offsetHeight;
-		const left = this._element.offsetWidth / 2 - width / 2 + this._element.getBoundingClientRect().left + document.documentElement.scrollLeft;
 		const top = this._element.getBoundingClientRect().top - height - 15 + document.documentElement.scrollTop;
+		let left = this._element.offsetWidth / 2 - width / 2 + this._element.getBoundingClientRect().left + document.documentElement.scrollLeft;
 	
 		if (left < 20) left = 20;
 
