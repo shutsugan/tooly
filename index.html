@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tooly</title>
+
+	<style type="text/css">
+		.card {
+		    position: relative;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -ms-flex-direction: column;
+		    flex-direction: column;
+		    min-width: 0;
+		    word-wrap: break-word;
+		    background-color: #fff;
+		    background-clip: border-box;
+		    border: 1px solid rgba(0,0,0,.125);
+		    border-radius: .25rem;
+		}
+
+		.card-body {
+		    -ms-flex: 1 1 auto;
+		    flex: 1 1 auto;
+		    padding: 1.25rem;
+		}
+
+		.card-img-top {
+		    width: 100%;
+		    border-top-left-radius: calc(.25rem - 1px);
+		    border-top-right-radius: calc(.25rem - 1px);
+		}
+
+		img {
+		    vertical-align: middle;
+		    border-style: none;
+		}
+
+		.card-title {
+		    margin-bottom: .75rem;
+		}
+
+		.btn-primary {
+		    color: #fff;
+		    background-color: #007bff;
+		    border-color: #007bff;
+		}
+
+		.btn {
+		    display: inline-block;
+		    font-weight: 400;
+		    text-align: center;
+		    white-space: nowrap;
+		    vertical-align: middle;
+		    -webkit-user-select: none;
+		    -moz-user-select: none;
+		    -ms-user-select: none;
+		    user-select: none;
+		    border: 1px solid transparent;
+		    padding: .375rem .75rem;
+		    font-size: 1rem;
+		    line-height: 1.5;
+		    border-radius: .25rem;
+		    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="src/css/main.css">
+</head>
+<body>
+
+	<div class="card" style="width: 20rem;">
+    <a href="#" title="Mon titre de test">
+      <img class="card-img-top" src="http://picsum.photos/318/180" alt="Card image cap">
+    </a>
+    <div class="card-body">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p>
+      <a href="#" class="btn btn-primary" title="Mon titre de test" data-tooltip="#tooltip-content">Infobulle HTML</a>
+    </div>
+  </div>
+
+	<script src="src/js/main.js" type="text/javascript"></script>
+</body>
+</html>
