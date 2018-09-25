@@ -37,7 +37,7 @@ After copying The build foulder to your project,
 
 In a new js file add ```import Tooltip from './build/js/min.js'``` to import the class 
 
-then add this line to initialize the carousel:
+then add this line to initialize the tooltip:
 
 ```js
 Tooltip.bind('a[title]');
